@@ -11,5 +11,13 @@ class Program
         string kelurahan = Console.ReadLine();
 
         Console.WriteLine("Kode Pos: " + kodePos.GetKodePos(kelurahan));
+
+        KodePos KodePos = new KodePos();
+        Console.WriteLine("Kode Pos Batununggal: " + kodePos.GetKodePos("Batununggal"));
+
+        DoorMachine door = new DoorMachine();
+        door.GetStatus();
+        door.BukaPintu();
+        door.KunciPintu();
     }
 }
